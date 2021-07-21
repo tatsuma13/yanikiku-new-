@@ -1,4 +1,5 @@
 @charset "UTF-8";
+  
 
 header {
     margin: 0;
@@ -7,6 +8,7 @@ header {
     padding:10px;
     background-color:rgba(0, 0, 0, 0.5) ;
     position: fixed;
+    z-index: 99;
   }
   
   #nav-drawer {
@@ -101,8 +103,8 @@ header {
 
 
   #nav-content {
-    letter-spacing: 10px;
-   font-size: 40px;
+  letter-spacing: 10px;
+   font-size: 30px;
    color: white;
    font-family: serif;
 
@@ -111,7 +113,7 @@ header {
   
   #nav-content p{
       display: block;
-      font-size: 30px;
+      font-size: 20px;
       font-family: serif;
       text-align: center;
       color: white;
@@ -151,6 +153,28 @@ html{
 
 
 
+
+/*------------img-------------*/
+
+.img{
+  position: relative;
+}
+
+
+.img p{
+  position: absolute;
+  margin: 0;
+  height: 0;
+  top:100px;
+  left: 20px;
+  color:white;
+  font-size: 8vw;
+  font-family: serif;
+  letter-spacing: 2px;
+}
+
+
+
 /*------------menu-------------*/
 #menu{
      width: 100%;
@@ -172,12 +196,11 @@ html{
     display: block;
     flex-wrap: wrap;
     color: white;
-    font-size: auto;
     font-family: serif;
-    height: 30px;
+    height: 3vw;
     margin: 0;
-    padding: 10px;
-    font-size: 20px;
+    padding: 8px;
+    font-size:2vw;
     text-decoration: none;
     background-color:black;
     border-color: white;
@@ -197,11 +220,11 @@ html{
 #main{
     clear: both;
     float: right;
-    width:70%;
+    width:60%;
     height: 40%;
     background-image: url(./image/mainhaikei.jpeg);
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     border-top:solid 3px rgb(238, 225, 227);
     border-left:solid 3px rgb(238, 225, 227);
     border-bottom:solid 3px rgb(238, 225, 227);
@@ -209,6 +232,7 @@ html{
 }
 
 #main h2{
+    font-size: 3vw;
     color: seashell;
     font-family: serif;
     justify-content: center;
@@ -216,11 +240,12 @@ html{
 }
 
 #main p{
-    font-size: 20px;
+    font-size: 13px;
     font-family: serif;
     padding-right: 10px;
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
+    line-height: 100%;
 
 }
 
@@ -229,29 +254,22 @@ html{
 }
 
 
-#main .port .img .rigth{
-    background:url(../yakiniku2.jpeg) right top repeat-y; 
+#main img{
+  width: 30vw;
+  height: 20vw;
 }
 
-
-#main .port .img .left{
-    background:url(../yakiniku4.jpeg) right top repeat-y; 
+#main .font1{
+  font-size: 8vw;
+  letter-spacing: 3px;
+  line-height: 1px;
 }
 
-
-.rigth{
-   float: right;
-}
-
-
-.left{
-    float: left;
-}
 
 /*------------side-------------*/
 #side{
     margin: 10px;
-    width: 25%;
+    width: 28%;
     float: left;
     background-image:url(./image/sidehaikei1.jpeg);
 }
@@ -266,34 +284,34 @@ html{
     padding: 8px;
     text-align: center;
     font-family: serif;
-    font-size: 25px;
+    font-size: 2.5vw;
     line-height: 25px;
     font-weight: normal;
-    border-top:solid 3px grey;
-    border-right:solid 3px grey;
-    border-left:solid 3px grey;
+    border-top:solid 2px grey;
+    border-right:solid 2px grey;
+    border-left:solid 2px grey;
 }
 
 #side .box .boxbody{
     padding: 20px;
-    border-top:solid 3px grey;
-    border-right:solid 3px grey;
-    border-bottom:solid 3px grey;
-    border-left:solid 3px grey;
+    border-top:solid 2px grey;
+    border-right:solid 2px grey;
+    border-bottom:solid 2px grey;
+    border-left:solid 2px grey;
 }
 
 #side .box .boxbody ul{
-    margin: 0 0 16px 0;
+    margin: 0;
     padding: 0;
 }
 
 #side .box .boxbody ul li{
-    font-size: 20px;
+    font-size: 2.3vw;
     font-family: serif;
     text-align: center;
     padding: 8px 0 8px 4px;
     list-style: none;
-    border-bottom: solid 3px grey;
+    border-bottom: solid 1px grey;
 
 }
 
