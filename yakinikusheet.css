@@ -144,9 +144,11 @@ header {
 }
 
 #footer p{
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-family: serif;
   text-align: center;
+  margin-top: 1px;
+  letter-spacing: 2px;
 }
 
 
@@ -161,15 +163,41 @@ html{
 
 
 
-
-/*------------img-------------*/
-
-.img{
+/*------------スライド-------------*/
+.fodeslide{
   position: relative;
-}
+ }
+ 
+ .fodeslide div{
+   position: absolute;
+   
+ }
+ 
+ .fodeslide div:nth-of-type(1){
+   animation: fodeslide 15s 0s infinite both;
+   z-index: 3;
+ }
+ 
+ .fodeslide div:nth-of-type(2){
+   animation: fodeslide 15s 5s infinite both;
+   z-index: 2;
+ }
+ 
+ .fodeslide div:nth-of-type(3){
+   animation: fodeslide 15s 10s infinite both;
+   z-index: 1;
+ }
+ 
+ @keyframes fodeslide{
+   0% { left: 0; opacity: 0; }
+   5% { left: 0; opacity: 1; }
+   20% { left: 0; opacity: 1; }
+   25% { left: 0; opacity: 0; }
+   26% { left: 100%; opacity: 0; }
+   100% { left: 100%; opacity: 0; }
+ }
 
-
-.img p{
+ .fodeslide p{
   position: absolute;
   margin: 0;
   height: 0;
@@ -179,14 +207,16 @@ html{
   font-size: 8vw;
   font-family: serif;
   letter-spacing: 2px;
+  z-index: 10;
 }
+
 
 
 
 /*------------menu-------------*/
 #menu{
      width: 100%;
-}
+    }
 
 #menu ul{
      margin: 0;
@@ -262,10 +292,15 @@ html{
 }
 
 
-#main img{
+#main .port img{
   width: 30vw;
   height: 20vw;
 }
+
+#main img:hover{
+  filter: drop-shadow(10px 10px 10px 10px rgb(255, 255, 255));
+}
+
 
 #main .font1{
   font-size: 4vw;
@@ -322,5 +357,3 @@ html{
     border-bottom: solid 1px grey;
 
 }
-
-/*------------画面サイズ変更-------------*/
